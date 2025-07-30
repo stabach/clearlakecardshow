@@ -147,27 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Add logo animation on page load
-    const logo = document.querySelector('.clear-lake-logo');
-    if (logo) {
-        logo.style.animation = 'logoEntrance 1s ease-out';
-    }
 
-    // Add CSS for logo entrance animation
-    const logoStyle = document.createElement('style');
-    logoStyle.textContent = `
-        @keyframes logoEntrance {
-            0% {
-                opacity: 0;
-                transform: scale(0.5) rotateY(180deg);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1) rotateY(0deg);
-            }
-        }
-    `;
-    document.head.appendChild(logoStyle);
 
     // Mobile menu toggle (for future implementation)
     const createMobileMenu = () => {
